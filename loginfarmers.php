@@ -91,7 +91,7 @@ if ($conn->connect_error) {
 	
 		<footer id="footer" class="container" style ="background: #fff; color: black; width: 100%; ">
 										<hr style = "border-top: 1px solid #ccc;"><br/><br/><br/>
-            <p align = "center">Developed by SpringLight Technology</p>
+            <p align = "center">Developed by peddy tech</p>
 								
 		</footer>
 				

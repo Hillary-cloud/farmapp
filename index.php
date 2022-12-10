@@ -183,7 +183,22 @@ if ($conn->connect_error) {
 			}
 				}
 			
-			
+			?>
+			<h3>Search using farm name</h3>
+			<form action="" method="post">
+			<div>
+				<input type="text" name="address" placeholder="Enter farm address">
+				<input type="submit" name="submit_address">
+			</div>
+		<?php 
+			if(isset($_POST["submit_address"]))
+			{
+				$address = $_POST["address"];
+				$address = str_replace(" ", "+", $address);
+				?>
+					<iframe width="100%" height="500" src="https://maps.google.com/maps?q=<?php echo $address; ?>&output=embed"></iframe>
+				<?php
+			}
 		?>
 		
     </div>
@@ -203,7 +218,7 @@ if ($conn->connect_error) {
 	
 		<footer id="footer" class="container" style ="background: #fff; color: black; width: 100%; ">
 										<hr style = "border-top: 1px solid #ccc;"><br/><br/><br/>
-            <p align = "center">Developed by SpringLight Technology</p>
+            <p align = "center">Developed by Peddy tech</p>
 								
 		</footer>
 				
